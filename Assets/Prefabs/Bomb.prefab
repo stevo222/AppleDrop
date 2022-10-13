@@ -15,6 +15,8 @@ GameObject:
   - component: {fileID: 5154338544991356317}
   - component: {fileID: 6499457552231449570}
   - component: {fileID: 3539823256476007788}
+  - component: {fileID: 863389612}
+  - component: {fileID: 863389620}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: Untagged
@@ -128,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d78274d7d1e09048a8decb3b1690344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _renderObj: {fileID: 0}
+  _renderObj: {fileID: 3803945648676849975}
 --- !u!114 &6499457552231449570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,9 +159,62 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1944103572134149418}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9df405ed408dc73449cbae9ac2c28d84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seconds: 1
+  seconds: 0.3
+--- !u!114 &863389612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944103572134149418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65ac98c930dc74343b8f1a89a736146f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idobj: {fileID: 11400000, guid: 9f4116b7cc3c8d64fa626cde78c09a01, type: 2}
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &863389620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1944103572134149418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72af474ff40e7924bb8b549489199144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  idObj: {fileID: 11400000, guid: 9f4116b7cc3c8d64fa626cde78c09a01, type: 2}
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  matchEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3539823256476007788}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  nomatchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  nomatchDelayed:
+    m_PersistentCalls:
+      m_Calls: []
