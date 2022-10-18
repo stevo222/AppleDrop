@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d51f77e9ca6b4f43a049c91de5e4181, type: 3}
   m_Name: PrefabInstancer
   m_EditorClassIdentifier: 
-  prefab: {fileID: 755961548851258166, guid: 549a85c4c5f15b743965d947af687ae6, type: 3}
-  dotprefab: {fileID: 0}
+  redprefab: {fileID: 755961548851258166, guid: 549a85c4c5f15b743965d947af687ae6, type: 3}
+  greenprefab: {fileID: 4828462236245022342, guid: 598a20454593e9240bed10c5e55729c7, type: 3}
+  yelloPrefab: {fileID: 6932651263132627872, guid: eca95dfc40141884eab8475ddb7860ba, type: 3}
+  rottenPrefab: {fileID: 4727865628715438038, guid: 8ad301d82026f274b9ff8fab5e2128b5, type: 3}
+  Bombprefab: {fileID: 1944103572134149418, guid: fec44174ae122af4480a0c399b0cc9a8, type: 3}
