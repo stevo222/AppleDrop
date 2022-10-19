@@ -26,5 +26,14 @@ public class MatchedBehavior : MonoBehaviour
             yield return new WaitForSeconds(0.5f);
             nomatchDelayed.Invoke();
         }
+        
+    }
+    
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "Object")
+        {
+            Destroy(gameObject);
+        }
     }
 }

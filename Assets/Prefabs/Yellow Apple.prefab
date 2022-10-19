@@ -14,11 +14,12 @@ GameObject:
   - component: {fileID: 6932651263132627878}
   - component: {fileID: 7658387188409433204}
   - component: {fileID: 7658387188409433195}
-  - component: {fileID: 7658387188409433194}
   - component: {fileID: 7658387188409433193}
+  - component: {fileID: -6613487145603420268}
+  - component: {fileID: 3321031029263765640}
   m_Layer: 0
   m_Name: Yellow Apple
-  m_TagString: Untagged
+  m_TagString: Object
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +97,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6932651263132627872}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 0.99999994, z: 0.2}
@@ -109,11 +110,11 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6932651263132627872}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.8
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -152,7 +153,7 @@ MonoBehaviour:
   matchEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7658387188409433194}
+      - m_Target: {fileID: -6613487145603420268}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -162,7 +163,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
   nomatchEvent:
     m_PersistentCalls:
@@ -182,19 +183,6 @@ MonoBehaviour:
   nomatchDelayed:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7658387188409433194
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6932651263132627872}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9df405ed408dc73449cbae9ac2c28d84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seconds: 0.3
 --- !u!114 &7658387188409433193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,4 +195,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b60f5d129c47d6d43a917aee27c211aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seconds: 12
+  seconds: 8
+--- !u!114 &-6613487145603420268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6932651263132627872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df405ed408dc73449cbae9ac2c28d84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seconds: 3
+--- !u!114 &3321031029263765640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6932651263132627872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74e9c38070838bd4fb2d7e83bfb218fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
