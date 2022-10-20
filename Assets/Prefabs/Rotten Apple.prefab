@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 6585977186677912312}
   - component: {fileID: 6585977186677912313}
   - component: {fileID: -7807437784581660186}
-  - component: {fileID: 6078405438062446949}
-  - component: {fileID: 6242062077697438460}
+  - component: {fileID: -3046177215700146427}
+  - component: {fileID: 673473294522312080}
   m_Layer: 0
   m_Name: Rotten Apple
   m_TagString: Object
@@ -163,7 +163,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 6078405438062446949}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -210,7 +210,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 8
---- !u!114 &6078405438062446949
+--- !u!114 &-3046177215700146427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4727865628715438038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ce1da9d4fbe6b4f96f1e146c0bba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &673473294522312080
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -222,16 +234,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df405ed408dc73449cbae9ac2c28d84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seconds: 3
---- !u!114 &6242062077697438460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4727865628715438038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74e9c38070838bd4fb2d7e83bfb218fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  seconds: 1

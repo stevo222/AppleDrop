@@ -12,8 +12,16 @@ public class SelfDestruct : MonoBehaviour
     {
         WfSObj = new WaitForSeconds(seconds);
         yield return WfSObj;
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Hit:" + other.transform.name);
 
+        if (tag == "Object")
+        {
+            Destroy(gameObject);
+        }
+    }
     
 }

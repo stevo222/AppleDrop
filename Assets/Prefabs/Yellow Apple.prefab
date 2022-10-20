@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 7658387188409433204}
   - component: {fileID: 7658387188409433195}
   - component: {fileID: 7658387188409433193}
-  - component: {fileID: -6613487145603420268}
-  - component: {fileID: 3321031029263765640}
+  - component: {fileID: -1562509523837924330}
+  - component: {fileID: 1405158330002933570}
   m_Layer: 0
   m_Name: Yellow Apple
   m_TagString: Object
@@ -153,7 +153,7 @@ MonoBehaviour:
   matchEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: -6613487145603420268}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -196,7 +196,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 8
---- !u!114 &-6613487145603420268
+--- !u!114 &-1562509523837924330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6932651263132627872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ce1da9d4fbe6b4f96f1e146c0bba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1405158330002933570
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -208,16 +220,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df405ed408dc73449cbae9ac2c28d84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seconds: 3
---- !u!114 &3321031029263765640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6932651263132627872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74e9c38070838bd4fb2d7e83bfb218fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  seconds: 1

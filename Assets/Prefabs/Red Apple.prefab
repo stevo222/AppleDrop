@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 189056702}
   - component: {fileID: 189056711}
   - component: {fileID: 4076499737319968051}
-  - component: {fileID: -8510018214498915418}
-  - component: {fileID: -4203540600929302494}
+  - component: {fileID: -7936968672483899964}
+  - component: {fileID: -6050625804472101303}
   m_Layer: 0
   m_Name: Red Apple
   m_TagString: Object
@@ -196,7 +196,19 @@ MonoBehaviour:
   nomatchDelayed:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &-8510018214498915418
+--- !u!114 &-7936968672483899964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755961548851258166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ce1da9d4fbe6b4f96f1e146c0bba9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-6050625804472101303
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -208,16 +220,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9df405ed408dc73449cbae9ac2c28d84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seconds: 3
---- !u!114 &-4203540600929302494
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 755961548851258166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74e9c38070838bd4fb2d7e83bfb218fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  seconds: 1
