@@ -1,13 +1,44 @@
 {
-    "m_SelectedDeviceId": "",
+    "m_SelectedDeviceId": "0123456789ABCDEF",
     "m_SelectedPackage": {
-        "deviceId": "",
-        "name": "",
-        "processId": 0,
+        "deviceId": "0123456789ABCDEF",
+        "name": "com.DefaultCompany.com.unity.template.mobile2Dnew",
+        "processId": 10241,
         "exited": false
     },
     "m_SelectedPriority": 0,
-    "m_KnownPackagesForSerialization": [],
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "0123456789ABCDEF",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 7805,
+            "exited": true
+        },
+        {
+            "deviceId": "0123456789ABCDEF",
+            "name": "com.DefaultCompany.com.unity.template.mobile2D",
+            "processId": 8080,
+            "exited": false
+        },
+        {
+            "deviceId": "0123456789ABCDEF",
+            "name": "com.google.android.apps.nbu.files",
+            "processId": 2195,
+            "exited": false
+        },
+        {
+            "deviceId": "0123456789ABCDEF",
+            "name": "com.DefaultCompany.com.unity.template.mobile2Dnew",
+            "processId": 9618,
+            "exited": false
+        },
+        {
+            "deviceId": "0123456789ABCDEF",
+            "name": "com.DefaultCompany.com.unity.template.mobile2Dnew",
+            "processId": 10241,
+            "exited": false
+        }
+    ],
     "m_Tags": {
         "m_Entries": [
             {
@@ -41,9 +72,20 @@
         ]
     },
     "m_MemoryViewerState": {
-        "MemoryWindowHeight": 0.0,
-        "MemoryWindowWidth": 0.0,
-        "MemoryTypeEnabled": [],
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
         "MemoryGroup": 2,
         "Behavior": 0
     },

@@ -10,6 +10,7 @@ public class Instantcer : ScriptableObject
     public GameObject yelloPrefab;
     public GameObject rottenPrefab;
     public GameObject Bombprefab;
+    public GameObject[] objectsToDrop;
     private int numb;
     public void CreateInstance()
     {
@@ -52,8 +53,7 @@ public class Instantcer : ScriptableObject
     public void CreateInstanceListRandomly(Vector3Lists obj)
     {
         numb = Random.Range(0, obj.Vector3List.Count - 4);
-        Instantiate(redprefab, greenprefab, yelloPrefab, rottenPrefab, Bombprefab, obj.Vector3List[numb].value, Quaternion.identity);
-       
+
 
     }
 

@@ -11,9 +11,7 @@ GameObject:
   - component: {fileID: 4828462236245022340}
   - component: {fileID: 4828462236245022341}
   - component: {fileID: 5296114241141589595}
-  - component: {fileID: 5296114241141589593}
   - component: {fileID: 5296114241141589592}
-  - component: {fileID: -2048984818622976440}
   - component: {fileID: -955650393888335728}
   - component: {fileID: 6957361892523331520}
   - component: {fileID: 4824148425200796459}
@@ -102,55 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 8
---- !u!114 &5296114241141589593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4828462236245022342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72af474ff40e7924bb8b549489199144, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idObj: {fileID: 11400000, guid: 9f4116b7cc3c8d64fa626cde78c09a01, type: 2}
-  startEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  matchEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 9013235271097655848, guid: bfbee2525c2b4a34899bb26fc61d38f6, type: 3}
-        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  nomatchEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5296114241141589595}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  nomatchDelayed:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &5296114241141589592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,18 +116,6 @@ MonoBehaviour:
   startEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &-2048984818622976440
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4828462236245022342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76ce1da9d4fbe6b4f96f1e146c0bba9a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!65 &-955650393888335728
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -206,7 +143,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!114 &4824148425200796459
 MonoBehaviour:
@@ -221,3 +158,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 1
+  bomb: 0
+  explosion: {fileID: 2614639692013941449, guid: bfbee2525c2b4a34899bb26fc61d38f6, type: 3}

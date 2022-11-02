@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Object
   - Floor
+  - Basket
   layers:
   - Default
   - TransparentFX
@@ -40,6 +41,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Top Layer
+    uniqueID: 1564956039
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

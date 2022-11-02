@@ -7,8 +7,8 @@ public class SpawnManager : MonoBehaviour
     public GameObject[] Obstacles;
     private float xSpawnRange = 6.1f;
     private float ySpawnRange = 6.0f;
-    private float appleSpawnTime = 5.0f;
-    private float obstacleSpawnTime = 4.0f;
+    public float appleSpawnTime = 4.0f;
+    public float obstacleSpawnTime = 3.0f;
     private float startDelay = 1.5f;
     
     // Start is called before the first frame update
