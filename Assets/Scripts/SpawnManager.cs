@@ -16,6 +16,8 @@ public class SpawnManager : MonoBehaviour
     public float obstacleSpawnTime = 3.0f;
     public float cloundSpawnTime = 6.0f;
     private float startDelay = 1.5f;
+    public float shrinkSpeed = 3f;
+   
     
     // Start is called before the first frame update
     void Start()
@@ -23,15 +25,17 @@ public class SpawnManager : MonoBehaviour
         InvokeRepeating("SpawnRandomApple", startDelay, appleSpawnTime);
         InvokeRepeating("SpawnRandomObstacle", startDelay, obstacleSpawnTime);
         InvokeRepeating("SpwanRandomClouds", startDelay,cloundSpawnTime);
+        InvokeRepeating("IncreaseShrinkSpeed",10, 1);
     }
 
      void SpawnRandomApple()
-    {
-        float randomx = Random.Range(xSpawnRange, -xSpawnRange);
+     {
+         float randomx = Random.Range(xSpawnRange, -xSpawnRange);
         int randomIndex = Random.Range(0, Apples.Length);
 
         Vector3 spawnPos = new Vector3(randomx, ySpawnRange);
         Instantiate(Apples[randomIndex], spawnPos, Apples[randomIndex].gameObject.transform.rotation);
+      
     }
 
     void SpawnRandomObstacle()
@@ -40,6 +44,7 @@ public class SpawnManager : MonoBehaviour
         int randomIndex = Random.Range(0, Obstacles.Length);
         Vector3 spawnPos = new Vector3(randomx, ySpawnRange);
         Instantiate(Obstacles[randomIndex], spawnPos, Obstacles[randomIndex].gameObject.transform.rotation);
+      
     }
 
     void SpwanRandomClouds()
@@ -49,6 +54,12 @@ public class SpawnManager : MonoBehaviour
         int randomIndex = Random.Range(0, Clouds.Length);
         Vector3 spwanPos = new Vector3(randomx, randomy);
         Instantiate(Clouds[randomIndex], spwanPos, Clouds[randomIndex].gameObject.transform.rotation);
+    }
+
+    void IncreaseShrinkSpeed()
+    {
+        shrinkSpeed++;
+       // Debug.Log("Shrinkspeed Increased");
     }
 
 }
