@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 public class MonoEventsBehavior : MonoBehaviour
 {
-    public UnityEvent startEvent, awakeEvent, disableEvent;
+    public UnityEvent startEvent, awakeEvent, disableEvent, applicationquitEvent;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -21,5 +21,10 @@ public class MonoEventsBehavior : MonoBehaviour
     private void OnDisable()
     {
         disableEvent.Invoke();
+    }
+
+    private void OnApplicationQuit()
+    {
+        applicationquitEvent.Invoke();
     }
 }
